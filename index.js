@@ -1,5 +1,5 @@
 // import environment variables store in the .env file
- require('dotenv').config();
+require('dotenv').config();
 
 const fetch = require('node-fetch');
 
@@ -13,12 +13,13 @@ app.use('/', express.static('public'));
 
 
 // go to http://localhost:portnumber/wolverine
-app.get('/wolverine', (req, res, next) =>
+app.get('/character-lookup', (req, res, next) =>
 {
-    grab('characters', {name: 'Wolverine'})
+    const {query} = req;
+    grab('characters', query)
     .then((data) =>
     {
-        console.log('data: ', data);
+       console.log('data: ', data);
         res.json(data);
     })
     .catch((err) =>
@@ -29,7 +30,11 @@ app.get('/wolverine', (req, res, next) =>
 
 });
 
-app.listen(process.env.PORT, () =>
+app.listen(process.env.PORT, (err) =>
 {
+    if (err)
+    {
+        console.log('Error starting server: ', err);
+    }
     console.log(`Server is listening on port ${process.env.PORT}...`);
 })
