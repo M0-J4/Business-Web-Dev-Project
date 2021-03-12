@@ -58,14 +58,3 @@ nav {
     border-radius: 0.5em;
     color: #C0C0C0;
 }
-
-footer {
-    display: flex;
-    flex-flow: row nowrap;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
