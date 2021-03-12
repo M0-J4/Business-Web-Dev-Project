@@ -44,7 +44,7 @@ nav {
     padding-top: 80px;
 }
 
-.content {
+.characterstuff {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
