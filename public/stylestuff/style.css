@@ -51,21 +51,10 @@ nav {
     padding: 1em;
 }
 
-.example-image {
-    background: url('https://static.wikia.nocookie.net/marveldatabase/images/6/6c/Amazing_Fantasy_Vol_1_15.jpg/revision/latest/scale-to-width-down/609?cb=20170406022750');
-    background-size: contain;
-    width: 318px;
-    height: 470px;
-}
-
 .search-info {
     background: rgba(30, 23, 34, 0.5);
     max-width: 60vw;
     padding: 1em;
     border-radius: 0.5em;
     color: #C0C0C0;
-}
-
-.search-image{
-    max-width: 30vw;
 }
