@@ -49,9 +49,6 @@ nav {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 1em;
-}
-
-.characterstuff {
     background: rgba(30, 23, 34, 0.5);
     max-width: 60vw;
     padding: 1em;
