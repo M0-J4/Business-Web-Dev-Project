@@ -22,6 +22,7 @@ const localCharSearch = (search) =>
         const descBlock = document.createElement('p');
         descBlock.textContent = first.description;
 
+        desc.innerHTML = "";
         desc.appendChild(descBlock);
 
         // see what our options are
